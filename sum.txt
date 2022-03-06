@@ -1,3 +1,9 @@
 sum 
 int a,int b
-c=20	
+c=20	\
+
+int a=10;
+char c='u';\
+float sib=15.34
+String add="ut";
+int a[]=new int[4];
