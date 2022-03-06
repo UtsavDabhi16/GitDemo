@@ -1,0 +1,288 @@
+
+Lenovo@lenovo MINGW64 ~
+$ cd Desktop/GitDemo
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master|MERGING)
+$ git commit -m "asdf"
+[master 2d3e1a8] asdf
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ ls
+first.java  insideinnerdemo.txt  mul.txt  mydemofile.txt  sum.txt
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git reset --soft asdf
+fatal: ambiguous argument 'asdf': unknown revision or path not in the w
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git reset --soft mydemo
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ ls
+first.java  insideinnerdemo.txt  mul.txt  mydemofile.txt  sum.txt
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git log --oneline
+31474f3 (HEAD -> master, mydemo) dsfs
+9d306b5 s commit
+a1f64c2 sum file added
+4fcbc76 mul fileadded
+0638b06 all file deleted
+837dc4a ASD
+a984c43 file deleted
+9b07345 merge successfully
+42844eb final output
+30f0506 inside innerdemo branch
+d1acbc2 hello world
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   mydemofile.txt
+
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git remote add origin https://github.com/UtsavDabhi16/Demo.git
+error: remote origin already exists.
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/UtsavDabhi16/Git
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git remote add origin https://github.com/UtsavDabhi16/Demo.git
+error: remote origin already exists.
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   mydemofile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git add first.txt
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git commit -m "sfsdd"
+[master 3861600] sfsdd
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 first.txt
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git commit -m "ASDFG"
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ LS
+first.java  first.txt  insideinnerdemo.txt  mul.txt  mydemofile.txt  su
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git statud
+git: 'statud' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git add --all
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ ls
+first.java  first.txt  insideinnerdemo.txt  mul.txt  mydemofile.txt  su
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ git push origin master
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (33/33), 2.70 KiB | 690.00 KiB/s, done.
+Total 33 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/UtsavDabhi16/GitDemo/pull/new/master
+remote:
+To https://github.com/UtsavDabhi16/GitDemo.git
+ * [new branch]      master -> master
+
+Lenovo@lenovo MINGW64 ~/Desktop/GitDemo (master)
+$ cd ..
+
+Lenovo@lenovo MINGW64 ~/Desktop
+$ cd Git
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git
+$ git clone https://github.com/JIYANIJAY3/DemoProject
+Cloning into 'DemoProject'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git
+$ ls
+DemoProject/
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/Git/.git/
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ config --global user.name "utsavdabhi"
+bash: config: command not found
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git config --global user.name "utsavdabhi"
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git config --global user.email "utsav@gmail.com"
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git clone https://github.com/JIYANIJAY3/DemoProject
+fatal: destination path 'DemoProject' already exists and is not an empt
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ ls
+DemoProject/
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git commit -m "inclue repo"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DemoProject/
+
+nothing added to commit but untracked files present (use "git add" to t
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git add DemoProject
+warning: adding embedded git repository: DemoProject
+hint: You've added another git repository inside your current repositor
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> DemoProject
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached DemoProject
+hint:
+hint: See "git help submodule" for more information.
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ ls
+DemoProject/
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git remote -v\
+> exit
+error: unknown switch `e'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tr=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branc
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <r
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcomman
+
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git remote -v
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git clone 200~https://github.com/UtsavDabhi16/DemoProject
+fatal: destination path 'DemoProject' already exists and is not an empt
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git add mul.txt
+fatal: pathspec 'mul.txt' did not match any files
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Lenovo/Desktop/Git/.g
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git add mul.txt
+fatal: pathspec 'mul.txt' did not match any files
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git add .
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git commit -m "success fully commit"
+[master (root-commit) a3edd91] success fully commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 DemoProject
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repo
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$ ls
+DemoProject/
+
+Lenovo@lenovo MINGW64 ~/Desktop/Git (master)
+$
